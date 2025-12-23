@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mauiStepper="clr-namespace:MauiStepper"
+             x:Class="MauiStepper.MainPage" x:DataType="mauiStepper:MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30,0" Spacing="25">
+
+            <Entry Keyboard="Numeric" Text="{Binding MyStepperValue}"/>
+            <Stepper Maximum="10" Minimum="0" Value="{Binding MyStepperValue}"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
